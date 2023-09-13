@@ -1,1 +1,10 @@
-Fix eye tracking
+Aestethic:
+- Choose color palette
+
+Develop:
+- CLI
+- drmjrn
+  - add firebase databse(?)
+- Bulletin board
+- Epilepsy button
+- truth generator
