@@ -11,3 +11,8 @@
 - Bulletin board
 - Epilepsy button
 - truth generator
+
+### Debug:
+- Eye tracking
+
+### Done:
