@@ -1,13 +1,16 @@
 // eyes
-const pupils = document.querySelectorAll(".eye .pupil");
 
 document.addEventListener("mousemove", (e) => {
+  const pupils = document.querySelectorAll(".eye .pupil");
   pupils.forEach((pupil) => {
-    // get x and y postion of cursor
+    //console.log(e.pageX, e.pageY);
+    console.log(e)
     var rect = pupil.getBoundingClientRect();
-    var x = (e.pageX - rect.left) / 30 + "px";
-    var y = (e.pageY - rect.top) / 30 + "px";
-    pupil.style.transform = "translate3d(" + x + "," + y + ", 0px)";
+    var offset = 90;
+    var x = (e.pageX - rect.left) / offset + "px";
+    var y = (e.pageY - rect.top)  / offset + "px";
+    pupil.style.transform = "translate3d(" + x + "," + y + ", 0)";
   });
 });
 // end eyes
+
