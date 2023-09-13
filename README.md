@@ -4,7 +4,7 @@
 ### Aestethic:
 - Choose color palette
 
-###Develop:
+### Develop:
 - CLI
 - drmjrn
   - add firebase databse(?)
