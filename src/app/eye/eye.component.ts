@@ -15,7 +15,7 @@ export class EyeComponent {
     pupils.forEach(pupil => {
       
       var rect =  pupil.getBoundingClientRect();
-      var offset = 70;
+      var offset = 65;
       
       var x:string = (e.pageX - rect.left) / offset + 'px';
       var y:string = (e.pageY - rect.top)  / offset + 'px';
@@ -25,5 +25,11 @@ export class EyeComponent {
     })
   }
 
-  //@HostListener
+  @HostListener('document:mouseleave', ['$event'])
+  onMouseLeave(e:MouseEvent) {}
+
+  @HostListener('document:onmouseover', ['$event'])
+  onMouseOver(e:MouseEvent) {
+    console.log('onMouseOver');
+  }
 }

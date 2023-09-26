@@ -1,3 +1,8 @@
+.eyelid {
+    width: 85px;
+    height: 70px;
+}
+
 .eye {
     width: 85px;
     height: 70px;
@@ -14,3 +19,8 @@
     border-radius: 101px;
     background-color: #000;
 }
+/*
+.eye:hover {
+    height: 45px;
+}
+*/
