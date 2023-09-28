@@ -1,17 +1,34 @@
-  export interface ICommand {
-    command: string;
-    description: string;
-    action:  Function;
+
+export interface ICommand {
+  command: string;
+  description: string;
+  action: Function;
 }
 
 export const commands: ICommand[] = [
-    {
-      command: 'help',
-      description: 'Display this list of commands',
-      action: () => {
-        return 'commands => ';
-      }
+  {
+    command: 'help',
+    description: 'Display this list of commands',
+    action: (history:string[]) => {
+      commands.forEach(command => {
+        history.push(`${command.command} - ${command.description}`);
+      });
     }
+  },
+  {
+    command: 'clear',
+    description: 'Clear the terminal screen',
+    action: (history:string[]) => {
+      history.splice(0, history.length);
+    }
+  },
+  {
+    command: 'owo',
+    description: 'owo',
+    action: (history:string[]) => {
+      history.push('uwu');
+    }
+  }
 ];
 
 export function getCommand(input:string):ICommand | null

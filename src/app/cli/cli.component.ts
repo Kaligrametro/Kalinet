@@ -18,7 +18,7 @@ export class CliComponent {
     console.log('Command: ', this.input);
 
     // push inputted command to history
-    this.history.push(this.input);
+    this.history.push(`> ${this.input}`);
 
     // get command
     const command = getCommand(this.input);
@@ -26,17 +26,12 @@ export class CliComponent {
     // if doesnt exist
     if (!command) 
     {
-      this.history.push(`Command '${this.input}' not found, for help type 'help'`);
-      console.log(this.history)
+      this.history.push(`Command '${this.input}' not found, to see avilable commands type 'help'`);
       return;
     }
 
     // execute command
-    const output = command.action();
-    this.history.push(output);
-
-
-    console.log(this.history)
+    command.action(this.history);
   }
 
 }

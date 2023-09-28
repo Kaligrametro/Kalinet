@@ -1,6 +1,9 @@
 <div class="CLI">
     <div class="content_contanier">
         <p> > Welcome to KLI :3</p>
+        <div class="content">
+            <p *ngFor="let line of history">{{line}}</p>
+        </div>
     </div>
     <div class="input_container">
         <input type="text" class="input" placeholder="Awaiting input" [(ngModel)]="input">
