@@ -1,8 +1,9 @@
 <div class="CLI">
     <div class="content_contanier">
-        <p> > Welcome to KLI :3</p>
         <div class="content">
-            <p *ngFor="let line of history">{{line}}</p>
+            <div *ngFor="let line of history">
+                <app-command-line [data]="line"></app-command-line>
+            </div>
         </div>
     </div>
     <div class="input_container">
@@ -10,3 +11,6 @@
         <button (click)="submit()"> osu </button>
     </div>
 </div>
+<!--
+<button class="colalpsable"></button>
+-->

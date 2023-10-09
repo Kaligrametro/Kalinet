@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CliComponent } from './cli/cli.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
+import { CommandLineComponent } from './cli/command-line/command-line.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     EyeComponent,
     NavbarComponent,
     CliComponent,
-    HomeComponent
+    HomeComponent,
+    CommandLineComponent
   ],
   imports: [
     BrowserModule,

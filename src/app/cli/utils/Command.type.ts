@@ -1,4 +1,3 @@
-
 export interface ICommand {
   command: string;
   description: string;
@@ -10,9 +9,7 @@ export const commands: ICommand[] = [
     command: 'help',
     description: 'Display this list of commands',
     action: (history:string[]) => {
-      commands.forEach(command => {
-        history.push(`${command.command} - ${command.description}`);
-      });
+      commands.forEach(command => history.push(`${command.command} - ${command.description}`));
     }
   },
   {
@@ -24,7 +21,7 @@ export const commands: ICommand[] = [
   },
   {
     command: 'owo',
-    description: 'owo',
+    description: 'jeje',
     action: (history:string[]) => {
       history.push('uwu');
     }
