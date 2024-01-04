@@ -1,0 +1,26 @@
+.eyelid {
+    width: 85px;
+    height: 70px;
+}
+
+.eye {
+    width: 85px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pupil {
+    width: 40px;
+    height: 40px;
+    border-radius: 101px;
+    background-color: #000;
+}
+/*
+.eye:hover {
+    height: 45px;
+}
+*/

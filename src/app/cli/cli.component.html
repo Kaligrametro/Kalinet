@@ -1,0 +1,16 @@
+<div class="CLI">
+    <div class="content_contanier">
+        <div class="content">
+            <div *ngFor="let line of history">
+                <app-command-line [data]="line"></app-command-line>
+            </div>
+        </div>
+    </div>
+    <div class="input_container">
+        <input type="text" class="input" placeholder="Awaiting input" [(ngModel)]="input">
+        <button (click)="submit()"> osu </button>
+    </div>
+</div>
+<!--
+<button class="colalpsable"></button>
+-->
