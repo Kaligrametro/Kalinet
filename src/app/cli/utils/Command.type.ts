@@ -25,6 +25,13 @@ export const commands: ICommand[] = [
     action: (history:string[]) => {
       history.push('uwu');
     }
+  },
+  {
+    command: 'addCommand',
+    description: 'Add a command to the terminal',
+    action: (history:string[]) => {
+      history.push('Not implemented yet');
+    }
   }
 ];
 
