@@ -1,5 +1,6 @@
 # V100
 Web page used for displaying projects
+![rough_layout](https://github.com/Kaligrametro/Kalinet/blob/dev-angular/blueprint.png)
 
 # TODO
 - Eye-Component
